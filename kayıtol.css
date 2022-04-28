@@ -1,0 +1,68 @@
+body {
+    background-color: #615400;
+    background-image: url(home-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+form {
+    text-align: center;
+    margin: 100px;
+}
+
+.container {
+    background-image: url(home-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .navbar {
+    width:  100%;
+    height: 80px;
+    background: rgba(34, 33, 33, 0.486);
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+    transition: .5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #ff6e00;
+    border-radius: 2px;
+}
+
+strong {
+    font-size: 17.5px;
+}

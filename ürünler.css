@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(home-bg.webp);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(34, 33, 33, 0.486);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul{
+     float: right;
+     margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+    transition: .5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: #ff6e00;
+    border-radius: 2px;
+}
+
+.container .center {
+    position:absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+}
+
+.center .buttons {
+    margin: 35px 0px;
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons button:hover {
+    background: #fff;    
+}
+
+.buttons .button1 {
+    height: 50px;
+    width: 260px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button2 {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button3 {
+    margin-top: 17px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button4 {
+    margin-top: 17px;
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button5 {
+    margin-top: 17px;
+    height: 50px;
+    width: 375px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button6 {
+    margin-top: 17px;
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button7 {
+    margin-top: 17px;
+    height: 50px;
+    width: 225px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button8 {
+    margin-top: 17px;
+    height: 50px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.buttons .button9 {
+    margin-top: 17px;
+    height: 50px;
+    width: 410px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background-color: rgb(82, 45, 45);
+    border: solid 1px #333;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.nav1 {
+    height: 570px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+    background-color: rgba(36, 36, 36, 0.486);
+}
+
+.link1 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.buttons *:visited {
+    color: #ffb3b3;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link3 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link4 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link5 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link7 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link8 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link9 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link10 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link11 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link12 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
+
+.link13 {
+    text-decoration: none;
+    color: #ffb3b3;
+}
