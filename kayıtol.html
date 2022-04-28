@@ -1,0 +1,98 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="kayıtol.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">PracticeHouses</a>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="kayıtol.html">Kayıt Ol</a></li>
+                <li><a href="ürünler.html">Ürünler</a></li>
+                <li><a href="mailto:berkayyelkanat00@gmail.com" target="_blank">İletişim</a></li>
+            </ul>
+            
+
+    <form>
+        <p id="isim"><strong>İsim</strong></p>
+        <input type="text" id="isimInput" />
+
+        <p id="soyisim"><strong>Soyisim</strong></p>
+        <input type="text" id="soyisimInput" />
+
+        <p id="email"><strong>E-posta</strong></p>
+        <input type="text" id="emailInput" />
+
+        <p id="sifre"><strong>Şifre</strong></p>
+        <input type="text" id="sifreInput" />
+
+        <p id="sifretekrar"><strong>Şifre Tekrar</strong></p>
+        <input type="text" id="sifretekrarInput" />
+        <br><br>
+        <input type="button" id="gonder" value="Gönder" />
+
+    </form>
+
+    <script type="text/javascript">
+
+        $("#gonder").click(function () {
+            if ($("#isimInput").val() == "") {
+                $("#isimInput").attr("placeholder", "İsim boş bırakılamaz!");
+            }
+
+            if ($("#soyisimInput").val() == "") {
+                $("#soyisimInput").attr("placeholder", "Soyisim boş bırakılamaz!");
+            }
+
+            if ($("#emailInput").val() == "") {
+                $("#emailInput").attr("placeholder", "E-mail boş bırakılamaz!");
+            }
+
+            if ($("#sifreInput").val() == "") {
+                $("#sifreInput").attr("placeholder", "Şifre boş bırakılamaz!");
+            }
+
+            if ($("#sifretekrarInput").val() == "") {
+                $("#sifretekrarInput").attr("placeholder", "Şifreyi tekrar yazınız!");
+            }
+
+            //E-mailin geçerli olup olmadığını kontrol ediyoruz   
+            function isEmail(email) {
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                return regex.test(email);
+            }
+            if ($("#emailInput").val() !== "") {
+
+                if (isEmail($("#emailInput").val()) == false) {
+                    alert("Hatalı E-mail adresi");
+                }
+            }
+
+            //Şifre kontrolü   
+
+            if ($("#sifreInput").val() != "" && $("#sifretekrarInput").val() !== "") {//Eğer şifre inputları boş değilse
+                if($("#sifreInput").val()!=$("#sifretekrarInput").val()) {//Şifreler birbirine eşit değilse
+                    alert("Şifreler uyuşmuyor")
+                }
+            }
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
