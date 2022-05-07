@@ -14,4 +14,3 @@ else{echo "Henüz bir soyisim değeri girilmedi";}
 <input name="soyisim" type="text">
 <input type="submit" value="Gönder">
 </form>
---------
