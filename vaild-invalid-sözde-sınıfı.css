@@ -1,0 +1,22 @@
+/*
+     x
+     ✓
+*/
+
+input:invalid {
+    border-color: tomato;
+}
+
+input:invalid + span::before {
+    content: 'x';
+    color: tomato;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid + span::before {
+    content: '✓';
+    color: green;
+ }

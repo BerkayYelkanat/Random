@@ -1,0 +1,27 @@
+/*
+h3 {
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+
+div {
+    color: blue;
+}
+*/
+
+.color-blue {
+    color: red;
+}
+
+p.color-blue.text-bold {
+font-weight: bold; color: blue;
+}
+
+p.color-blue.text-bold#paragraf2 {
+    color: purple;
+}
+
+

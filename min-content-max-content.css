@@ -1,0 +1,15 @@
+div {
+    background-color: lime;
+    width: min-content;
+    height: min-content;
+}
+
+.box1 {
+    background-color: lime;
+}
+
+.box2 {
+    background-color: tomato;
+    writing-mode: vertical-lr;
+    height: max-content;
+}

@@ -1,0 +1,25 @@
+
+input:checked + span {
+    background-color: lime;
+}
+
+.box, input {
+    display: none;
+}
+input:checked + .box {
+    display: block;
+} 
+
+/*
+.button::before {
+    content: attr(data-hide);
+}
+
+.checkbox:checked + .button::before {
+    content: attr(data-show);
+}
+
+.checkbox:checked + .button + .box {
+    display: none;
+}
+*/

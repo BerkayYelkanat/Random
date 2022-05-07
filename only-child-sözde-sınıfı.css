@@ -1,0 +1,7 @@
+div:only-child {
+    background-color: lime;
+}
+
+li:only-child {
+    background-color: yellow;
+}
